@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+
+
+    //bài 1
+
+    //let car ={
+    //     type :"fiat",
+    //     model :"500",
+    //     color:"white"
+    // }
+    // console.log(car.type);
+
+
+
+
+    //bài 2
+    //let person={
+    //     firstname:"john",
+    //     lastname:"doe",
+    //     age:50,
+    //     eyecolor:"blue"
+    // }
+    // console.log(person.firstname + "is" +person.age+"year old");
+
+    //bài 3
+    // var person ={
+    //     firstname:"john",
+    //     lastname:"doe",
+    //     if:5566,
+    //     fullname: function ()
+    //     {
+    //         return this.firstname+""+ this.lastname
+
+    //     }
+    // }
+
+    // bai 3
+    // var person = {
+    //     firstName: "John",
+    //     lastName : "Doe",
+    //     id     : 5566,
+    //     fullName : function() {
+    //         return this.firstName + " " + this.lastName;
+    //     }
+    // };
+    // console.log(person.fullName());
+
+    // // bai 4
+    // let person = {
+    //     name: "Cristiano Ronaldo dos Santos Aveiro",
+    //     yearOfBirth: 1985,
+    //     nationality: "Portulgal"
+    // };
+    // do {
+    //     var check = prompt("Do you want to add info? (y/n)");
+    //     if (check === "y") {
+    //         let newProperty = prompt("What info do you want to add?");
+    //         person[newProperty] = prompt("What is your new info?");
+    //         for (x in person) {
+    //             console.log(person[x]);
+    //         }
+    //     }
+    //     else {
+    //         console.log("Goodbye!");
+    //     }
+    // }
+    // while (check === "y");
+
+    // // bai 5
+    // let person = {
+    //     name: "Cristiano Ronaldo dos Santos Aveiro",
+    //     yearOfBirth: 1985,
+    //     nationality: "Portulgal"
+    // };
+    // person.name = "Lionel Messi";
+    // person.yearOfBirth = 1987;
+    // person.nationality = "Argentina";
+
+    // // bai 6
+    // let person = {
+    //     name: "Cristiano Ronaldo dos Santos Aveiro",
+    //     yearOfBirth: 1985,
+    //     nationality: "Portulgal"
+    // };
+    // do {
+    //     check = prompt("Do you want to delete info? (y/n)");
+    //     if (check === "y") {
+    //         let delProperty = prompt("Which info do you want to delete?");
+    //         delete person[delProperty];
+    //         for (x in person) {
+    //             console.log(person[x]);
+    //         }
+    //     }
+    //     else {
+    //         console.log("Goodbye!");
+    //     }
+    // }
+    // while (check === "y");
+
+    // // bai 7
+    // let inventory = {
+    //     gold: 500,
+    //     pouch: ["flint", "twine", "gemstone"],
+    //     backpack: ["xylophone", "dagger", "bedroll", "bread loaf"]
+    // };
+    // inventory.pocket = ["seashell", "strange berry", "lint"];
+    // inventory.backpack.splice(1, 1);
+    // inventory.gold += 50;
+    // delete inventory.pouch;
+
+    // // bai 8
+    // function myFunction(a, b) {
+    //   return a * b;
+    // }
+    // console.log(myFunction(4, 3));
+
+    // // bai 9
+    // function myFunc(a, b) {
+    //   return Number(a) + Number(b);
+    // }
+    // let a = prompt("a = "),
+    //     b = prompt("b = ");
+    // console.log(myFunc(a, b));
+
+    // // bai 10 !!!
+    // function remove_dollar_sign(s) {
+    //   let pattern = /$/g;
+    //   let result = s.replace(pattern, "");
+    //   return result;
+    // }
+    // let s = prompt("Enter your string:");
+    // console.log(remove_dollar_sign(s));
+
+    // bai 12
+    // (function () {
+    //     console.log("Hello! I called myself");
+    // })();
+
+    // bai 13
+    // function myFunction(a, b) {
+    //     return a * b;
+    // }
+    // let x = myFunction(4, 3) * 2;
+    // console.log(x);
+
+    // bai 14
+    // hello = function() {
+    //   return "Hello World";
+    // }
+    // // ==> Day la khai bao ham theo cach thong thuong voi tu khoa function
+    // hello = () => {
+    //   return "Hello World";
+    // }
+    // // ==> Day la khai bao arrow function, luoc bo tu khoa function va thay vao do la ki hieu =>
+
+    // // bai 15
+    // let hello;
+    // hello = (val) => "Hello " + val;
+    // console.log(hello("Universe!"));
+
+    // // bai 17
+    // const x = (x, y) => {return x * y};
+    // console.log(x(5, 5));
+
+    // bai 18
+    // const x = (x, y) => {return x * y};
+    // console.log('Ket qua 5 * 5 = ' + x(5, 5));
+
+    // // bai 19
+    // function findMax() {
+    //     let i;
+    //     let max = 0;
+    //     for(i = 0; i < arguments.length; i++) 
+    //     {
+    //         if (arguments[i] > max) 
+    //         {
+    //         max = arguments[i];
+    //         }
+    //     }
+    //     return max;
+    // } 
+    // console.log(findMax(4, 5, 6));
+
+    // // bai 20
+    // function sumAll() {
+    //   let sum = 0;
+    //   for (let i = 0; i < arguments.length; i++) {
+    //     sum += arguments[i];
+    //   }
+    //   return sum;
+    // }
+    // console.log(sumAll(1, 123, 500, 115, 44, 88));
+
+    // // bai 21
+    // let myObject = {
+    //     firstName:"John",
+    //     lastName: "Doe",
+    //     fullName: function() {
+    //         return this.firstName + " " + this.lastName;
+    //     }
+    // }
+    // console.log(myObject.fullName());
+
+    // // bai 22
+    // let person = {
+    //     fullName: function() {
+    //         return this.firstName + " " + this.lastName;
+    //     }
+    // }
+    // let person1 = {
+    //     firstName:"John",
+    //     lastName: "Doe"
+    // }
+    // let person2 = {
+    //     firstName:"Mary",
+    //     lastName: "Doe"
+    // }
+    // let x = person.fullName.call(person1); 
+    // console.log(x); 
+
+    // // bai 23
+    // let person = {
+    //     fullName: function(city, country) {
+    //         return this.firstName + " " + this.lastName + "," + city + "," + country;
+    //     }
+    // }
+    // let person1 = {
+    //     firstName:"John",
+    //     lastName: "Doe"
+    // }
+    // let person2 = {
+    //     firstName:"Mary",
+    //     lastName: "Doe"
+    // }
+    // let x = person.fullName.call(person1, "Oslo", "Norway"); 
+    // console.log(x); 
+
+    // // bai 24
+    // let counter = 0;
+    // function add() {
+    //     counter += 1;
+    // }
+    // add();
+    // add();
+    // add();
+    // console.log("The counter is: " + counter);
+
+    // // bai 25
+    // function add() {
+    //     var counter = 0;
+    //     function plus() {counter += 1;}
+    //     plus();  
+    //     return counter; 
+    // }
+    // console.log(add());
+
+    
+
+    // // bai 26
+
+    // // Chuong trinh 1
+    // function conThoAnCo() {
+    // setTimeout(function() {
+    //     console.log('con thỏ ăn cỏ, uống nước');
+    // }, 3000);
+    // }
+    // // con thỏ chui vô hang
+    // function hotel() {
+    // console.log('chui vô hotel');
+    // }
+    // conThoAnCo();
+    // hotel();
+    // // Nhan xet: Ham hotel() duoc thuc thi sau ham conThoAnCo() nhung lai in ra ket qua truoc vi ham conThoAnCo() da duoc settimeout
+
+    // // Chuong trinh 2
+    // function conThoAnCo(callback007) {
+    //     setTimeout(function() {
+    //         console.log('con thỏ ăn cỏ, uống nước');
+    //         callback007(); // đây là lúc điệp viên báo cáo cho sếp !
+    //     }, 3000);
+    // }
+    // function hotel() {
+    //     console.log('chui vô hotel');
+    // }
+    // var callback = function() {
+    //     hotel();
+    // }
+    // conThoAnCo(callback);
+    // // Nhan xet: Ham conThoAnCo() duoc thuc thi va in ra doan text "con thỏ ăn cỏ, uống nước", sau do moi goi ham callback chua ham hotel() va in ra doan text "chui vô hotel"
+
+    // // Chuong trinh 3
+    // function conThoAnCo(callback007) {
+    //     setTimeout(function() {
+    //         console.log('con thỏ ăn cỏ, uống nước');
+    //         callback007(); // đây là lúc điệp viên báo cáo cho sếp !
+    //     }, 3000);
+    // }
+    // function hotel() {
+    //     console.log('chui vô hotel');
+    // }
+    // conThoAnCo(function() {
+    //     hotel();
+    // });
+    // // Nhan xet: Ham conThoAnCo() duoc thuc thi va in ra doan text "con thỏ ăn cỏ, uống nước", sau khi in xong doan text tren moi goi ham hotel() va in ra doan text "chui vô hotel"
+
+
+
+//bài 1
+// let cauthu = {
+//     ten : "Cristiano Ronaldo",
+//     ngaysinh : "5/2/1985",
+//     quoctich : "Bồ Đào Nha"
+// }
+// console.log(cauthu);
+//  let thongtinthem = prompt("Bạn có muốn tìm thêm thông tin của cầu thủ không?(Y?N)")
+//  thongtinthem.toUpperCase()
+// let text=""
+// switch(thongtinthem)
+// {
+//     case "Y":
+//         text = prompt("Bạn muốn biết thêm điều gì(nghề,nơi sinh, công danh,tiểu sử)")
+//         text.toUpperCase()
+//         if (text = "nghề")
+//         {
+//             cauthu.nghe ="cầu thủ bòng đá \n Vị trí tiền vệ cánh, tiền đạo \n Đội trưởng đội bóng bồ đào nha "
+//             console.log(cauthu);
+
+//         }
+//         else if ( text="nơi sinh" )
+//         {
+//             cauthu.noisinh = "Bồ Đào Nha"
+//             console.log(cauthu);
+
+
+//         }
+//         else if ( text = "Công danh")
+//         {
+//             cauthu.congdanh = "rất nhiều"
+//             console.log(cauthu);
+
+
+//         }
+//         else if (text = "tiểu sử")
+//         {
+//             cauthu.tieusu = "tự tìm"
+//             console.log(cauthu)
+//         }
+//         break;
+//     case "N" :
+//         console.log("bye");
+//         break;
+// }
+
+
+//bài tập 
+// let inventory = {
+//     gold : 500,
+//     pouch: ["flint","twine","gemstone"],
+//     backpack: ["xylophone","dagger","bedroll","bread loaf"]
+
+// }
+// console.log(inventory);
+// let them = prompt("what do you want to add")
+// inventory[them] = []
+// let soluongdothem = prompt("bạn muốn cho thêm bao nhiêu đồ?")
+// console.log(soluongdothem);
+// for (i= 1 ;i <= soluongdothem; i++)
+// {
+//     let dothem = prompt("Những đồ đó là gì?")
+//     console.log(dothem);
+// }
+// them.push(dothem)
+// console.log(them);
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+</html>
