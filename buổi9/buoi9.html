@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ bài 1
+ <br>   
+    <button onclick="timedText()">Display timed text</button>
+<input type="text" id="txt">
+<script>
+function timedText() {
+  var x = document.getElementById("txt");
+  setTimeout(function(){ x.value="2 seconds" }, 2000);
+  setTimeout(function(){ x.value="4 seconds" }, 4000);
+  setTimeout(function(){ x.value="6 seconds" }, 6000);
+
+}
+</script>
+
+
+<br>
+<p>bài 2</p>
+<br>
+<button onclick="openWin()">Open "myWindow"</button>
+<script>
+function openWin() {
+  var myWindow = window.open("", "myWindow", "width=1000, height=1000");
+  myWindow.document.write("<p>This is 'myWindow'</p>");
+  setTimeout(function(){ myWindow.close() }, 100000);
+}
+</script>
+<br>
+
+bài 3
+<button onclick="startCount()">Start count!</button>
+<input type="text1" id="txt1">
+<button onclick="stopCount()">Stop count!</button>
+<script>
+var c = 0;
+var t;
+var timer_is_on = 0;
+function timedCount() {
+  document.getElementById("txt1").value = c;
+  c = c + 1;
+  t = setTimeout(timedCount, 1000);
+}
+function startCount() {
+  if (!timer_is_on) {
+    timer_is_on = 1;
+    timedCount();
+  } 
+}
+function stopCount() {
+  clearTimeout(t);
+  timer_is_on = 0;
+}
+</script>
+<br>
+bài 4
+<br>
+<body onload="startTime()">
+  <div id="txt2"></div>
+  <script>
+  function startTime() {
+    var today = new Date();
+    var day = today.getDay()
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    // add a zero in front of numbers<10
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById("txt2").innerHTML = "today is" +"  "+day +"   "+ h + ":" + m + ":" + s;
+    var t = setTimeout(function(){ startTime() }, 500);
+  }
+  function checkTime(i) {
+    if (i < 10) {
+      i = "0" + i;
+    }
+    return i;
+  }
+  </script>
+  <br>
+  bài 5
+  <br>
+  <p id="demo5"></p>
+<script>
+var myVar = setInterval(myTimer, 1000);
+function myTimer() {
+  var d = new Date();
+  var t = d.toLocaleTimeString();
+  document.getElementById("demo5").innerHTML = t;
+}
+</script>
+<br>
+bài 6
+<br>
+<p id="demo"></p>
+<button onclick="myStopFunction()">Stop time</button>
+<script>
+var myVar = setInterval(myTimer, 1000);
+function myTimer() {
+  var d = new Date();
+  var t = d.toLocaleTimeString();
+  document.getElementById("demo").innerHTML = t;
+}
+function myStopFunction() {
+  clearInterval(myVar);
+}
+</script>
+<br> 
+bài 7
+<br>
+<style>
+  #myProgress {
+    width: 100%;
+    height: 30px;
+    position: relative;
+    background-color: #ddd;
+  }
+  #myBar {
+    background-color: #4CAF50;
+    width: 10px;
+    height: 30px;
+    position: absolute;
+  }
+  </style>
+  <body>
+  <h1>JavaScript Progress Bar</h1>
+  <div id="myProgress">
+    <div id="myBar"></div>
+  </div>
+  <br>
+  <button onclick="move()">Click Me</button> 
+  <script>
+  function move() {
+    var elem = document.getElementById("myBar");   
+    var width = 0;
+    var id = setInterval(frame, 10);
+    function frame() {
+      if (width == 100) {
+        clearInterval(id);
+      } else {
+        width++; 
+        elem.style.width = width + '%'; 
+      }
+    }
+  }
+  </script>
+  <br>
+
+</body>
+</html>
