@@ -238,6 +238,7 @@ header .main-menu .form-inline input {
   border: 0;
   font-size: 12px;
   height: 32px;
+  width: 10px;
   outline: 0;
 }
 
